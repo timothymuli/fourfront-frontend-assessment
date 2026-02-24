@@ -7,7 +7,6 @@
   position: relative;
 }
 
-/* TOP CARD */
 .top-card{
   background: #3b3b3b;
   border: 2px solid #bda05b;
@@ -42,7 +41,6 @@
   line-height: 1.2;
 }
 
-/* MINI CARDS */
 .mini-card{
   border-radius: 12px;
   min-height: 95px;
@@ -76,7 +74,6 @@
   color: #111;
 }
 
-/* INFO CARD */
 .info-card{
   background: #3b3b3b;
   border-radius: 12px;
@@ -93,9 +90,9 @@
   font-size: 12px;
   font-weight: 600;
   color: #f0f0f0;
+  line-height: 1.4;
 }
 
-/* MEMBERSHIPS */
 .member-btn{
   width: 100%;
   border: none;
@@ -127,9 +124,9 @@
   padding: 12px;
   font-size: 12px;
   font-weight: 600;
+  line-height: 1.4;
 }
 
-/* bottom pill */
 .bottom-pill{
   background: #caa33a;
   color: #fff;
@@ -139,7 +136,16 @@
   font-weight: 700;
 }
 
-/* footer */
+.details-box{
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
 .footer{
   background: #caa33a;
   color: #fff;
@@ -148,7 +154,6 @@
   font-weight: 700;
 }
 
-/* WhatsApp circle */
 .wa-circle{
   position: absolute;
   right: 6px;
@@ -160,20 +165,9 @@
   border: 2px solid #fff;
 }
 
-/* message styles */
 #formMsg{
   font-weight: 700;
 }
 
-/* small readability tweak */
-.info-text, .member-desc{
-  line-height: 1.4;
-}
-
-.ok{
-  color: green;
-}
-
-.err{
-  color: red;
-}
+.ok{ color: green; }
+.err{ color: red; }
