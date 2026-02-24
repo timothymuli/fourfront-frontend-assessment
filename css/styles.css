@@ -1,72 +1,59 @@
-:root{
-  --bg: #e9e9ee;
-  --cardBg: #2b2b2b;
-  --strokeGold: #bda05b;
-  --txt: #fff;
-}
-
-body{
-  margin: 0;
-}
-
 .page-bg{
-  background: var(--bg);
-  min-height: 100vh;
+  background: #e9e9ee;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.app-card{
-  background: transparent;
+.app{
   position: relative;
 }
 
-/* top dark card */
+/* TOP CARD */
 .top-card{
   background: #3b3b3b;
+  border: 2px solid #bda05b;
   border-radius: 14px;
-  border: 2px solid rgba(189,160,91,0.7);
-}
-
-.top-name{
-  width: 100%;
-  font-size: 16px;
-}
-
-.top-msg{
-  line-height: 1.2;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
 }
 
 .avatar-wrap{
-  width: 70px;
-  height: 70px;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
   padding: 3px;
   background: #fff;
 }
+
 .avatar{
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-/* mini cards */
+.top-name{
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.top-msg{
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* MINI CARDS */
 .mini-card{
   border-radius: 12px;
-  padding: 10px;
-  background: #f4c6c8;
+  min-height: 95px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 92px;
 }
 
+.mini-pink{ background: #f4c6c8; }
 .mini-green{ background: #d5e8a6; }
 .mini-yellow{ background: #f2d7a6; }
-.mini-pink{ background: #f4c6c8; }
 
 .mini-img{
   width: 28px;
@@ -75,17 +62,11 @@ body{
   object-fit: cover;
 }
 
-.mini-name{
+.mini-names{
   font-size: 12px;
   font-weight: 700;
   color: #333;
-  line-height: 1.05;
-}
-.mini-sub{
-  font-size: 12px;
-  font-weight: 700;
-  color: #333;
-  line-height: 1.05;
+  line-height: 1.1;
 }
 
 .mini-number{
@@ -93,14 +74,13 @@ body{
   font-size: 22px;
   font-weight: 800;
   color: #111;
-  margin-top: 6px;
 }
 
-/* info card */
+/* INFO CARD */
 .info-card{
   background: #3b3b3b;
   border-radius: 12px;
-  color: var(--txt);
+  color: #fff;
 }
 
 .info-title{
@@ -109,66 +89,67 @@ body{
   font-size: 18px;
 }
 
-.info-body{
+.info-text{
   font-size: 12px;
   font-weight: 600;
-  color: #efefef;
+  color: #f0f0f0;
 }
 
-/* membership */
+/* MEMBERSHIPS */
 .member-btn{
   width: 100%;
   border: none;
   border-radius: 10px;
-  padding: 10px 12px;
+  padding: 12px;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  font-weight: 700;
 }
 
 .member-foundation{ background: #caa33a; }
 .member-economy{ background: #8fa0b5; }
 
-.member-title{
-  font-size: 14px;
-}
-.member-strong{
+.bold{
   font-weight: 900;
 }
 
-.chev{
-  font-weight: 900;
+.plus{
   font-size: 18px;
+  font-weight: 900;
 }
 
 .member-desc{
-  display: none;
   background: #3b3b3b;
+  color: #ededed;
   border-radius: 10px;
   padding: 12px;
-  color: #eaeaea;
   font-size: 12px;
   font-weight: 600;
-  margin-top: 6px;
-}
-
-.member-desc.show{
-  display: block;
 }
 
 /* bottom pill */
 .bottom-pill{
   background: #caa33a;
   color: #fff;
-  font-size: 12px;
-  font-weight: 700;
   border-radius: 10px;
   padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
-/* whatsapp bubble */
-.wa-bubble{
+/* footer */
+.footer{
+  background: #caa33a;
+  color: #fff;
+  padding: 10px 8px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* WhatsApp circle */
+.wa-circle{
   position: absolute;
   right: 6px;
   bottom: 18px;
@@ -179,15 +160,20 @@ body{
   border: 2px solid #fff;
 }
 
-/* messages */
-#formMsg.ok{ color: #1b7f3a; font-weight: 700; }
-#formMsg.error{ color: #b00020; font-weight: 700; }
-
-.footer{
-  color: #fff;
-  background: #caa33a;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
-  padding: 10px 8px;
+/* message styles */
+#formMsg{
   font-weight: 700;
+}
+
+/* small readability tweak */
+.info-text, .member-desc{
+  line-height: 1.4;
+}
+
+.ok{
+  color: green;
+}
+
+.err{
+  color: red;
 }
