@@ -10,10 +10,24 @@ var economy = document.getElementById("economyDesc");
 var plus1 = document.getElementById("plus1");
 var plus2 = document.getElementById("plus2");
 
+var foundationBtn = document.getElementById("foundationBtn");
+var economyBtn = document.getElementById("economyBtn");
+
+if (foundationBtn) {
+  foundationBtn.addEventListener("click", function () {
+    lastOpened = "foundation";
+  });
+}
+
+if (economyBtn) {
+  economyBtn.addEventListener("click", function () {
+    lastOpened = "economy";
+  });
+}
+
 if (foundation) {
   foundation.addEventListener("shown.bs.collapse", function () {
     plus1.textContent = "−";
-    lastOpened = "foundation";
   });
 
   foundation.addEventListener("hidden.bs.collapse", function () {
@@ -24,7 +38,6 @@ if (foundation) {
 if (economy) {
   economy.addEventListener("shown.bs.collapse", function () {
     plus2.textContent = "−";
-    lastOpened = "economy";
   });
 
   economy.addEventListener("hidden.bs.collapse", function () {
@@ -54,7 +67,7 @@ if (form) {
       return;
     }
 
-    msg.textContent = "Thanks! Details are shown below.";
+    msg.textContent = "Thanks Timothy Muli! Details for " + email + " are shown below.";
     msg.className = "small mt-2 ok";
 
     detailsBox.style.display = "block";
